@@ -40,7 +40,7 @@ class App < Sinatra::Base
     b = params[:number2].to_i
     if sum = a + b
     "#{sum}"
-    else sum = a - b
+  else sum = b - a
     "#{sum}"
   end
   end
