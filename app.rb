@@ -41,7 +41,7 @@ class App < Sinatra::Base
 
    sum = a + b
     "#{sum}"
-    
+
   end
   get "/:operation/:number1/:number2" do
     a = params[:number1].to_i
@@ -50,4 +50,5 @@ class App < Sinatra::Base
     answer = a - b
       "#{answer}"
 
+end
 end
